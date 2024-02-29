@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.block{
+    gap: 115px;
+    display: flex;
+}
+
+/*  */
+.block2-table {
+    display: flex;
+    gap: 120px;
+    width: 1300px;
+    background-color: rgb(162, 162, 162) ;
+
+}
+#edit{
+    width: 50px;
+    color: white;
+    background-color: black;
+}
+#delete{
+    color: white;
+    background-color: red;
+}
+
+.tun{
+    color: white;
+    background-color: black;
+}
+
+
+
+
+
+/* 
+ */
+
+
+
+
+ .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 8s, visibility 8s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 8s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
